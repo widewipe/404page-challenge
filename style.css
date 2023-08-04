@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    font-size: 1.5em;
+    margin: 1em 3em;
+}
+
+main {
+    font-family: 'Space Mono', monospace;
+    font-size: 1em;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10em;
+    /* width: 80%; */
+    margin: 5em 10em;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head {
+    font-size: 2.5em;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+.img {
+    width: 50%;
+}
+
+.btn {
+    color: white;
+    background-color: black;
+    padding: 1em;
+    text-decoration: none;
+    width: 50%;
+    text-align: center;
+}
+
+.btn:hover {
+    border: 0.1em solid black;
+    color: black;
+    background-color: #fff;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 2em
+}
+
+
+
+@media (max-width: 900px) {
+    main {
+        flex-direction: column;
+        text-align: center;
+        gap: 5em;
+    }
+
+    .content {
+        align-items: center;
+        gap: 3em
+    }
+}
+
+@media (max-width: 900px) {
+    main {
+        flex-direction: column;
+        text-align: center;
+        gap: 5em;
+        width: 100%;
+        margin: 5em 3em;
+    }
+
+    .content {
+        align-items: center;
+        gap: 3em
+    }
+
+    .logo {
+        margin: 1em;
+    }
+}
